@@ -78,7 +78,7 @@
   (match                        (:background prgn|colour|gray|2))
   (minibuffer-prompt            (:weight 'normal :foreground prgn|colour|white|2))
   (query-replace                (:background prgn|colour|gray|2))
-  (region                       (:background prgn|colour|gray|2))
+  (region                       (:distant-foreground prgn|colour|white|2 :background prgn|colour|gray|2))
   (show-paren-match             (:background prgn|colour|gray|2))
   (show-paren-match-expression  (:background prgn|colour|gray|2))
   (show-paren-mismatch          (:background prgn|colour|gray|2))
@@ -121,7 +121,7 @@
   (font-lock-type-face              (:foreground prgn|colour|blue|2))
   (font-lock-warning-face           (:background prgn|colour|red|2))
 
-  ;; marginalia
+  ;; Marginalia
   (marginalia-date            (:foreground prgn|colour|gray|2))
   (marginalia-documentation   (:foreground prgn|colour|gray|2))
   (marginalia-file-priv-no    (:foreground prgn|colour|gray|2))
@@ -151,6 +151,7 @@
   ;; Vertico
   (vertico-current (:distant-foreground prgn|colour|white|2 :background prgn|colour|gray|2))))
 
+;; Add theme to `load-theme-path'
 (and load-file-name
      (boundp 'custom-theme-load-path)
      (add-to-list 'custom-theme-load-path
