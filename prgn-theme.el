@@ -119,6 +119,7 @@
   (font-lock-preprocessor-face      (:foreground prgn|colour|blue|2))
   (font-lock-string-face            (:foreground prgn|colour|yellow|2))
   (font-lock-type-face              (:foreground prgn|colour|blue|2))
+  (font-lock-variable-name-face     (:weight 'normal))
   (font-lock-warning-face           (:background prgn|colour|red|2))
 
   ;; Marginalia
