@@ -151,6 +151,12 @@
   ;; Vertico
   (vertico-current (:distant-foreground prgn|colour|white|2 :background prgn|colour|gray|2))))
 
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory
+                   (file-name-directory load-file-name))))
+
 (provide-theme 'prgn)
 
 ;; prgn-theme.el ends here
